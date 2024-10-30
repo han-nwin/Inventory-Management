@@ -58,7 +58,7 @@ def main():
         print(f"  Reorder Point (ROP): {rop:.0f} units")
         print(f"  Estimated Shipping Cost: ${shipping_cost:.2f}")
         print(f"  Lead Time for {name}: {lead_time} days")
-        print(f"  Minimum Order Quantity to Cover Lead Time: {order_quantity:.0f} units")
+        print(f"  Minimum Order Quantity to Cover Lead Time: {(order_quantity - safety_stock):.0f} units")
         print(f"  Days Until Next Order to Avoid Stockout: {days_until_reorder:.0f} days")
         print("------------------------------------------")
         print("Suggested Cadence and Order Quantity:")
